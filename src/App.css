@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 0 20px;
+}
+
 .first_page {
   display: flex;
   height: 100vh;
@@ -15,6 +19,7 @@
   color: white;
   overflow: hidden; 
   background-color: rgb(185, 186, 187);
+  padding: 0 20px;
   /* position: relative; */
 }
 
@@ -31,6 +36,7 @@
 .first_page h1 {
   position: relative;
   z-index: 1;
+  margin: 0 20px;
 }
 
 .get-started-btn {
@@ -62,6 +68,7 @@
   backdrop-filter: blur(7px);
   gap: 100px;
   background-color: rgba(51, 61, 80, 0.7);
+  padding: 0 20px;
 }
 
 .aboutus_main {
@@ -77,13 +84,12 @@
   flex-direction: column;
   gap: 30px;
   text-align: justify;
+  padding: 0 20px;
 }
 
 .aboutus_container p {
   font-size: 23px;
-  font-weight: 700;
-  
-
+  font-weight: 600;
 }
 
 .first_page_name_btn {
@@ -93,6 +99,7 @@
   justify-content: center;
   gap: 30px;
   width: 500px;
+  padding: 0  20px;
 }
 
 .first_page_name_btn h1 {
@@ -128,4 +135,108 @@
 
 .budget_sentence {
   font-size: 29px;
+}
+
+
+
+
+/* Tablet (width between 600px and 768px) */
+@media (max-width: 768px) {
+  .first_page {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .first_page h1 {
+    font-size: 35px;
+    margin: 10px 0;
+  }
+
+  .get-started-btn {
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+
+  .main_event {
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+  }
+
+  .aboutus_main {
+    width: 90%;
+    text-align: center;
+  }
+
+  .first_page_name_btn h1 {
+    font-size: 40px;
+  }
+
+  .first_page_name_btn p {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .budget_heading {
+    font-size: 30px;
+  }
+
+  .budget_sentence {
+    font-size: 25px;
+  }
+}
+
+/* Small Phone (width up to 480px) */
+@media (max-width: 480px) {
+  .first_page {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .first_page h1 {
+    font-size: 28px;
+    margin: 5px 0;
+  }
+
+  .get-started-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .main_event {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .aboutus_main {
+    width: 100%;
+    text-align: center;
+  }
+
+  .aboutus_container p {
+    font-size: 18px;
+  }
+
+  .first_page_name_btn {
+    width: 100%;
+  }
+
+  .first_page_name_btn h1 {
+    font-size: 30px;
+  }
+
+  .first_page_name_btn p {
+    font-size: 20px;
+  }
+
+  .budget_heading {
+    font-size: 25px;
+  }
+
+  .budget_sentence {
+    font-size: 20px;
+  }
 }
